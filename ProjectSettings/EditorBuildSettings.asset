@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainScene.unity
+    path: Assets/Scenes/MainMetaverseScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/FlappyBirdScene.unity
+    guid: f5a13d8e0a91ef847bfb6b30a9975562
+  - enabled: 1
+    path: Assets/Scenes/BlockStackScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/TopDownScene.unity
+    guid: b2a940ae20cdc624ea0803e705073c87
   m_configObjects: {}
