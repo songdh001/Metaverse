@@ -44,6 +44,14 @@ public class GameManager : MonoBehaviour
         currentScore += score;
         Debug.Log($"Score : {score}");
         uiManager.UpdateScore(currentScore);
+
+        if (currentScore > PlayerPrefs.GetInt("BirdBestScore", 0))
+        {
+            PlayerPrefs.SetInt("BirdBestScore", currentScore);
+            PlayerPrefs.Save();
+        }
+
+
     }
 
 }

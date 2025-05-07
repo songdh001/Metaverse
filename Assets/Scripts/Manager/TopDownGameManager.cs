@@ -61,6 +61,11 @@ namespace TopDown
             currentWaveIndex += 1;
             enemyManager.StartWave(1 + currentWaveIndex / 5);
             uiManager.ChangeWave(currentWaveIndex);
+            if (currentWaveIndex > PlayerPrefs.GetInt("TopDownBestWave", 0))
+            {
+                PlayerPrefs.SetInt("TopDownBestWave", currentWaveIndex);
+                PlayerPrefs.Save();
+            }
         }
 
         public void EndOfWave()
