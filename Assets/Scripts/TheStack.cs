@@ -330,6 +330,9 @@ public class TheStack : MonoBehaviour
             PlayerPrefs.SetInt(BestScoreKey, bestScore);
             PlayerPrefs.SetInt(BestComboKey, bestCombo);
         }
+        PlayerPrefs.SetInt("Stack_Score", bestScore);
+        PlayerPrefs.SetInt("Stack_Combo", bestCombo);
+        PlayerPrefs.Save();
     }
 
     void GameOverEffect()
